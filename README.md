@@ -33,8 +33,18 @@ https://github.com/ETML-RRY/324_inspection_git.git
 ### Partie 2 — Exploration de base
 
 1. Combien de branches existent dans le dépôt ? Citez-les.  
+    - 5
+    - main
+    - experiment/dark-mode
+    - featuer/header
+    - feature/login
+    - hotfix/typo
 2. Quels sont les **tags** disponibles ? A quoi correspondent-ils ?  
+    - v0.2
+    - v0.1
+    - Pour les releases, on peut attribuer des tags aux releases
 3. Quelle est la **branche principale** du projet ?
+    - main
 
 ### Partie 3 — Historique et commits
 
