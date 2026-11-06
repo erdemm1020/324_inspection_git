@@ -33,6 +33,7 @@ https://github.com/ETML-RRY/324_inspection_git.git
 ### Partie 2 — Exploration de base
 
 1. Combien de branches existent dans le dépôt ? Citez-les.  
+    - commande : 'git branch -a'
     - 5
     - main
     - experiment/dark-mode
@@ -40,24 +41,38 @@ https://github.com/ETML-RRY/324_inspection_git.git
     - feature/login
     - hotfix/typo
 2. Quels sont les **tags** disponibles ? A quoi correspondent-ils ?  
+    - commande : 'git tag'
     - v0.2
     - v0.1
     - Pour les releases, on peut attribuer des tags aux releases
 3. Quelle est la **branche principale** du projet ?
+    - commande : 'git remote show origin', puis chercher 'HEAD branch : ..'
     - main
 
 ### Partie 3 — Historique et commits
 
 4. Quel est le message du **premier commit** du projet ?  
+    - commande : 'git log --reverse --oneline | head -1'
+    - "Initial commit: structure HTML/CSS/JS + README + docs"
 5. Trouvez le commit où une **clé API** a été ajoutée par erreur. Quel est son identifiant (hash court) ?  
+    - commande : 'git log -S "API_KEY" --oneline' (pour trouver une commande qui contient cette variable dans le fichier commité)
+    - bea2d1a
 6. Quel commit a ensuite corrigé cette erreur ?  
-7. Trouvez le commit où le **titre de la page d'accueil** a été corrigé.  
+    - commande : 'git log -S "API_KEY" --oneline' (pour trouver une commande qui contient cette variable dans le fichier commité)
+    - 1b682c9
+7. Trouvez le commit où le **titre de la page d'accueil** a été corrigé.
+    - commande : 'git log --oneline --grep="titre"'
+    - 6317c07 (origin/hotfix/typo) hotfix: corrige la typo 'Wolrd' dans le titre
 8. Quel est le message du commit qui a **ajouté le fichier `CHANGELOG.md`** et quelle commande avez-vous utilisé ?
+    - commande : 'git log'
+    - "docs: ajoute un changelog de base", la commande git log, puis '/', pour trouver le mot clé changelog
 
 ### Partie 4 — Branches et fusions
 
 9. Quelles branches ont été fusionnées dans `main` ?  
+    - git branch --merged main
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
+    - 
 
 ### Partie 5 — Analyse du contenu
 
