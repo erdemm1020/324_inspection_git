@@ -72,7 +72,8 @@ https://github.com/ETML-RRY/324_inspection_git.git
 9. Quelles branches ont été fusionnées dans `main` ?  
     - git branch --merged main
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
-    - 
+    - git branch -a --no-merged main
+    - remotes/origin/experiment/dark-mode
 
 ### Partie 5 — Analyse du contenu
 
